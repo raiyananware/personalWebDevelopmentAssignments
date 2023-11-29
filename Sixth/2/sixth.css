@@ -1,0 +1,33 @@
+body {
+  background-image: url("https://e0.pxfuel.com/wallpapers/954/847/desktop-wallpaper-best-blue-without-watermark-blue-2048x1152.jpg");
+  background-size: cover;
+  color: white;
+}
+
+input {
+  background-color: transparent;
+  color: white;
+  width: 97%;
+}
+
+select {
+  width: 99%;
+}
+
+button {
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgb(183, 211, 183);
+}
+
+table {
+  position: absolute;
+  left: 37%;
+  top: 6%;
+  width: 500px;
+}
+
+h3 {
+  position: absolute;
+  left: 45%;
+}

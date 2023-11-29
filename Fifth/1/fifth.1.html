@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Factorial of Number</title>
+    <!-- <link rel="stylesheet" href="./fifth1.css"> -->
+    <!-- <script src="fifth1.js"></script> -->
+    <script>
+      function calpac() {
+        var number = parseInt(
+          document.getElementById("userEnteredNumber").value
+        );
+        console.log(number);
+        let num = 1,
+          i;
+        for (i = number; i > 0; --i) {
+          num *= i;
+        }
+        factNumber.textContent = num;
+        console.log(num);
+      }
+    </script>
+    <style>
+      body {
+        background-image: url("https://getwallpapers.com/wallpaper/full/1/f/c/324103.jpg");
+        background-size: cover;
+        color: white;
+        font-size: 30px;
+      }
+
+      #heading {
+        text-align: center;
+      }
+
+      .table {
+        border-color: gold;
+        position: absolute;
+        left: 35%;
+        top: 10%;
+      }
+
+      tr {
+        text-align: center;
+        height: 30px;
+      }
+
+      td {
+        width: 50px;
+      }
+
+      table {
+        height: 40%;
+        width: 30%;
+      }
+
+      .calbtn {
+        background-color: rgb(129, 230, 129);
+        border-radius: 9px;
+        height: 100%;
+        width: 100%;
+        font-size: 50px;
+      }
+
+      input {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-size: 50px;
+        text-align: center;
+      }
+
+      #factNumber {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="heading">Factorial of number</h3>
+    <table class="table" border>
+      <tr class="userInput">
+        <td>Enter Number</td>
+        <td>
+          <input
+            type="number"
+            id="userEnteredNumber"
+            class="userEnteredNumber"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button class="calbtn" onclick="calpac()">Calculate</button>
+        </td>
+      </tr>
+      <tr>
+        <td>The Factorial is:</td>
+        <td><span id="factNumber"> </span></td>
+      </tr>
+    </table>
+  </body>
+</html>

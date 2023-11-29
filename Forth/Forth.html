@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Land of Boxes</title>
+    <style>
+        body{
+    background-image: url("https://images.unsplash.com/photo-1619252584172-a83a949b6efd?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGlnaHQlMjB0aGVtZXxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+}
+
+#table{
+    border-color: black;
+    margin:auto;
+    margin-top: 10%;
+    border-radius: 5px;
+}
+
+#header{
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+#submit{
+    background-color: lightgreen;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#product, #cards{
+    width: 95%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input, textarea{
+    margin: 5px;
+    color:black;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+textarea{
+    height: 40px;
+}
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <table border id="table">
+        <tr>
+          <th rowspan="4" id="header">Contact Details</th>
+          <td>Name:</td>
+          <td><input type="text" id="name" /></td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td><textarea id="address"></textarea></td>
+        </tr>
+        <tr>
+          <td>Contact Number</td>
+          <td><input type="number" id="contactNumber" /></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" id="email" /></td>
+        </tr>
+        <tr>
+          <th rowspan="4" id="header">Product Details</th>
+          <td>Product name</td>
+          <td>
+            <select name="product" id="product" onchange="productNumber.value=value, price.value=eval(productNumber.value*quantity.value)">
+              <option value="5">EconoBox</option>
+              <option value="10">Standard Box</option>
+              <option value="15">Premium Box</option>
+              <option value="20">Deluxe Box</option>
+              <option value="30">Super Deluxe Box</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Product Number:</td>
+          <td><input type="text" id="productNumber" value="5" disabled/></td>
+        </tr>
+        <tr>
+          <td>Quantity:</td>
+          <td><input type="number" id="quantity" value="1" onchange="price.value=eval(productNumber.value*quantity.value)"/></td>
+        </tr>
+        <tr>
+          <td>Price: </td>
+          <td><input type="text" id="price" value="5" disabled></td>
+        </tr>
+        <tr>
+          <th rowspan="4" id="header">Method of Payment</th>
+          <td>Cards Types</td>
+          <td><select name="cards" id="cards">
+              <option value="Bank of India">Bank of india</option>
+            <option value="ICICI bank">ICICI Bank</option>
+            <option value="State Bank of India">State bank of India</option>
+            <option value="HDFC Bank">HDFC Bank</option>
+            <option value="Axis Bank">Axis Bank</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td>Card Number:</td>
+          <td><input type="number" id="cardNumber" /></td>
+        </tr>
+        <tr>
+          <td>Expiry Date:</td>
+          <td><input type="month" id="expiryDate" /></td>
+        </tr>
+        <tr>
+            <td>CVV</td>
+            <td><input type="password" id="cvv"> </td>
+        </tr>
+        <tr>
+          <th colspan="2" id="header">Billing Address:</th>
+          <td><textarea></textarea></td>
+        </tr>
+        <tr>
+          <th colspan="2" id="header">Delivery Address</th>
+          <td><textarea></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="3" id="header">
+            <button type="button" id="submit" value="Submit">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

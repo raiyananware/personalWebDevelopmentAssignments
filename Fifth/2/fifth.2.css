@@ -1,0 +1,9 @@
+input{
+    width: 97%;
+    height: 97%;
+}
+
+button{
+    width: 100%;
+    background-color: lightcyan;
+}
