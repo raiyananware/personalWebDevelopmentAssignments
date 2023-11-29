@@ -1,0 +1,40 @@
+.loginForm {
+  background-image: url("https://t4.ftcdn.net/jpg/05/67/46/07/360_F_567460720_meuVUMqysMiMKuuH0A5Du9FvYhoDU3Sp.jpg");
+  background-color: #aab2f1;
+  height: (max-content + 25px);
+  width: 280px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  padding: 5px 5px 25px 5px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  /* display: grid; */
+}
+
+#Content {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 25px;
+  position: relative;
+  text-align: center;
+}
+
+#submitButton {
+  width: 100px;
+  height: 25px;
+  background-color: #7fe481;
+  border-radius: 5px;
+}
+
+#username,
+#pass {
+  border-radius: 5px;
+}
+
+body {
+  background-image: url("https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?w=1380&t=st=1699180094~exp=1699180694~hmac=8181d65781217758775724f09e75340c0f52d980a34bea6c3cc348f7f1785b49");
+  background-size: cover;
+}

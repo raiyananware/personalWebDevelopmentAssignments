@@ -1,0 +1,43 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1619252584172-a83a949b6efd?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGlnaHQlMjB0aGVtZXxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+}
+
+#table{
+    border-color: black;
+    margin:auto;
+    margin-top: 10%;
+    border-radius: 5px;
+}
+
+#header{
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+#submit{
+    background-color: lightgreen;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#product, #cards{
+    width: 95%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+input, textarea{
+    margin: 5px;
+    color:black;
+    background-color: aqua;
+    border-radius: 3px;
+}
+
+textarea{
+    height: 40px;
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Check eligibility for voting</title>
+    <script>
+        function check() {
+  let dob = new Date(document.getElementById("dob").value),
+    nationality = document.getElementById("nationality").value == "India";
+  let date = new Date()
+  let age = date.getFullYear() - dob.getFullYear();
+  if (
+    date.getMonth() < dob.getMonth() ||
+    (date.getMonth() == dob.getMonth() && date.getDate() < dob.getDate())
+  ) {
+    age--;
+  }
+  if (age >= 18 && nationality) {
+    ans.textContent = "You are eligible to Vote";
+  } else {
+    ans.textContent = "Sorry!.. You are not Eligible to Vote";
+  }
+}
+    </script>
+    <style>
+        #dob{
+    width: 97%;
+}
+
+#nationality{
+    width: 100%;
+}
+
+#check{
+    width:100%;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <h3>Checking the Eligibility for Vote</h3>
+    <table border>
+        <tr>
+            <td>Enter Date of Birth</td>
+            <td><input type="date" id="dob" class="dob"> </td>
+        </tr>
+        <tr>
+            <td>Enter Nationality</td>
+            <td><select id="nationality" class="nationality">
+                <option value="not Entered">--Select--</option>
+                <option value="Australia">Australia</option> 
+                <option value="Brazil">Brazil</option>
+                <option value="China">China</option>
+                <option value="Germany">Germany</option>
+                <option value="India">India</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Japan">Japan</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Libya">Libya</option>
+            </select> </td>
+        </tr>
+        <tr>
+            <td><button id="check" onclick="check()">Check</button> </td>
+            <td><span id="ans" class="ans"></span> </td>
+        </tr>
+    </table>
+</body>
+</html>
